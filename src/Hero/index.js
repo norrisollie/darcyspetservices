@@ -76,13 +76,13 @@ function Hero(props, ref) {
 		tl.fromTo(paws[13], {y: 0}, {y: "-150vh", duration: 0.75}, 0.3);
 		tl.fromTo(paws[14], {y: 0}, {y: "-150vh", duration: 0.75}, 0.2);
 		tl.fromTo(paws[15], {y: 0}, {y: "-150vh", duration: 0.75}, 0.4);
-	}, []);
+	});
 
 	return (
 		<div className="section hero" ref={ref}>
 			<div className="logo-container" ref={logoContainerRef}>
 				<div className="logo">
-					<img src={logo} ref={logoRef} />
+					<img src={logo} ref={logoRef} alt="Darcy's Pet Services Logo" />
 				</div>
 			</div>
 			<div className="images-container" ref={imagesContainerRef}>

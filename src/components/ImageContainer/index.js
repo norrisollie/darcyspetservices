@@ -6,7 +6,7 @@ const ImageContainer = (props, ref) => {
 		<div className="image-container" ref={ref}>
 			<div className="image">
 				<div className="tape"></div>
-				<img src={props.src} />
+				<img src={props.src} alt=""/>
 			</div>
 		</div>
 	);

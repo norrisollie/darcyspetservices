@@ -26,7 +26,7 @@ const Testimonials = () => {
 			},
 			0.25
 		)
-	}, [])
+	})
 
 	const containerRef = useRef(null),
 		titleRef = useRef(null),

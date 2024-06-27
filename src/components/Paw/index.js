@@ -3,7 +3,7 @@ import paw from "../../assets/paw.svg";
 const Paw = (props, ref) => {
 	return (
 		<div className="paws" ref={ref}>
-			<img src={paw} />
+			<img src={paw} alt=""/>
 		</div>
 	);
 };

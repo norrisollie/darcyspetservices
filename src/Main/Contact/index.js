@@ -32,7 +32,7 @@ const Contact = () => {
 			<div className="left" ref={leftRef}>
 				<div className="social">
 					<div className="icon">
-						<img src={facebook} />
+						<img src={facebook} alt=""/>
 					</div>
 					<a href="https://www.facebook.com/darcyspetservices">
 						Darcy's Pet Services
@@ -40,7 +40,7 @@ const Contact = () => {
 				</div>
 				<div className="social">
 					<div className="icon">
-						<img src={instagram} />
+						<img src={instagram} alt=""/>
 					</div>
 					<a href="https://www.instagram.com/darcyspetservices_">
 						@darcyspetservices_
@@ -48,7 +48,7 @@ const Contact = () => {
 				</div>
 				<div className="social">
 					<div className="icon">
-						<img src={email} />
+						<img src={email} alt=""/>
 					</div>
 					<a href="mailto:darcyspetservices@gmail.com">
 						darcyspetservices@gmail.com
@@ -56,7 +56,7 @@ const Contact = () => {
 				</div>
 				<div className="social">
 					<div className="icon">
-						<img src={mobile} />
+						<img src={mobile} alt=""/>
 					</div>
 					<a href="tel:07961239690">07961239690</a>
 				</div>

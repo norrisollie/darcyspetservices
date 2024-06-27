@@ -12,7 +12,6 @@ const App = () => {
 	const containerRef = useRef(null);
 	const heroRef = useRef(null);
 	const mainRef = useRef(null);
-	const footerRef = useRef(null);
 	const timeline = () => {
 		tl = gsap.timeline({
 			defaults: {
@@ -22,14 +21,13 @@ const App = () => {
 				trigger: containerRef.current,
 				scrub: true,
 				markers: true,
-				scrub: 2,
 			},
 		});
 	};
 
 	useEffect(() => {
 		timeline();
-	}, []);
+	});
 
 	return (
 		<div className="App" data-scroll-container ref={containerRef}>
