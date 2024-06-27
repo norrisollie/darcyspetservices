@@ -1,9 +1,8 @@
 import {useRef, useEffect} from "react";
 import Hero from "./Hero";
 import Main from "./Main";
-
-import gsap, {ScrollTrigger} from "gsap/all";
 import "./App.scss";
+import gsap, {ScrollTrigger} from "gsap/all";
 
 const App = () => {
 	gsap.registerPlugin(ScrollTrigger);
@@ -12,6 +11,7 @@ const App = () => {
 	const containerRef = useRef(null);
 	const heroRef = useRef(null);
 	const mainRef = useRef(null);
+
 	const timeline = () => {
 		tl = gsap.timeline({
 			defaults: {
@@ -20,7 +20,7 @@ const App = () => {
 			scrollTrigger: {
 				trigger: containerRef.current,
 				scrub: true,
-				markers: true,
+				markers: false,
 			},
 		});
 	};
@@ -30,7 +30,7 @@ const App = () => {
 	});
 
 	return (
-		<div className="App" data-scroll-container ref={containerRef}>
+		<div className="App" ref={containerRef}>
 			<Hero ref={heroRef} timeline={tl} />
 			<Main ref={mainRef} />
 		</div>

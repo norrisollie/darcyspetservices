@@ -13,7 +13,7 @@ const Testimonials = () => {
 			scrollTrigger: {
 				trigger: containerRef.current,
 				start: "top",
-				markers: true,
+				markers: false,
 			},
 		})
 

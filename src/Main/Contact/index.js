@@ -16,7 +16,7 @@ const Contact = () => {
 			scrollTrigger: {
 				trigger: containerRef.current,
 				start: "bottom bottom -=100%",
-				markers: true,
+				markers: false,
 			},
 		});
 
